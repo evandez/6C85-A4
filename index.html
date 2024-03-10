@@ -1,7 +1,8 @@
 <!DOCTYPE HTML>
 <html lang="en">
+
 <head>
-	<title>Vis & Society Assignment 3</title>
+	<title>Vis & Society Assignment 4</title>
 	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
 </head>
 
@@ -13,18 +14,19 @@
 		</h1>
 
 		<p>
-			<strong>Your Name</strong> — <em>Your MIT Email Address</em>
+			<strong>Evan Hernandez</strong> — <em>dez@mit.edu</em>
 		</p>
 	</header>
 
 	<main>
-    <h2>Proposition: [STATE PROPOSITION]</h2>
+		<h2>Proposition: Climate change is increasing the rate of natural disasters across the
+			world.</h2>
 
 		<section>
-      <h3>FOR the Proposition</h3>
+			<h3>FOR the Proposition</h3>
 
-      <figure>
-				<img src="IMAGE_FILENAME" alt="" />
+			<figure>
+				<img src="./figures/persuasive.png" alt="" />
 				<figcaption>
 					BRIEF CAPTION HERE.
 				</figcaption>
@@ -35,19 +37,49 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE_1</li>
-				<li>RATIONALE_2</li>
-				<li>RATIONALE_3</li>
+				<li>(-.5) <b>Subset of data:</b>I focused on flood natural disasters over other
+					natural
+					disasters because I noticed during my exploratory analysis that the most
+					profound change in natural disasters over time has been with floods: they've
+					become significantly more frequent in the past twenty years, especially in
+					heavily coastal countries. I felt this was a tad deceptive as other disasters
+					have not increased in frequency quite as much, though they <i>have</i>
+					increased. I opted to include the sea level indicators alongside the natural
+					disaster indicators to tie the figure back to global warming; I felt that
+					readers more strongly associated sea levels with global warming.
+				</li>
+				<li>(+1) <b>Shape:</b> I chose to use an area plot for an affective appeal to
+					"rising waters." I wanted readers to feel a sense of urgency when looking at
+					both the increase in sea level and flood disasters. Initially, I
+					considered using a quieter visual representation (e.g. bars) for the flood
+					counts, but decided against it because it added visual noise and drew too much
+					attention to specific years, when I wanted readers to focus most on the overall
+					trend of "rising" values.</li>
+				<li>(-1) <b>Selecting the axis ranges:</b> I intentionally restricted the y axis for
+					sea level to positive values, hiding the fact that sea levels decreased prior to
+					the mid
+					1990s and the fact that floods were becoming more common even prior to sea
+					levels starting
+					to rise. I wanted readers to not get distracted by the negative values and
+					to focus mostly on the affective experience of rising waters.</li>
+				<li>(1.5) <b>Data transformations:</b> I chose to keep each measurement in terms of
+					absolute counts rather than reporting fractions or percentages. The main data
+					transformations I performed were averaging the sea level
+					changes for each year, normalizing out the different measuring equipment used by
+					NOAA
+					and the different seas, and joining the sea level measurements with the flood
+					disaster
+					counts (summed over countries).</li>
 			</ul>
-    </section>
+		</section>
 
-    <section>
-      <h3>AGAINST the Proposition</h3>
+		<section>
+			<h3>AGAINST the Proposition</h3>
 
-      <figure>
-				<img src="IMAGE_FILENAME" alt="" />
+			<figure>
+				<img src="./figures/deceptive.png" alt="" />
 				<figcaption>
-          BRIEF CAPTION HERE.
+					BRIEF CAPTION HERE.
 				</figcaption>
 			</figure>
 
@@ -56,17 +88,51 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE_1</li>
-				<li>RATIONALE_2</li>
-				<li>RATIONALE_3</li>
+				<li>(-2) <b>Data selection:</b> Perhaps the most deceptive thing I did in this
+					plot
+					was to join the natural disaster count indicators with the surface temperature
+					indicators, and <i>use this to filter the data down in a seemingly principled
+						way</i>. Specifically, I noticed two trends in the data before making the
+					plot:
+					(1) floods made up most of the increase in natural disasters, and (2) the
+					countries that had the greatest increases in temperatures also had the smallest
+					increase in floods over the years. Based on this observation, I decided to focus
+					the plot on the
+					relationship between surface temperature (literal "global warming") with natural
+					disaster frequency, and could thus justify filtering the dataset to only the 50
+					countries experiencing the most warming. I included all natural disasters in the
+					count to help smooth out the bars, resulting bars for natural
+					disasters look quite flat, even when you ignore the small axis ranges I describe
+					below.</li>
+				<li>(1) <b>Data transformation:</b> All of the values plotted in this figure are
+					five-year moving averages, intended to denoise the plot a bit. I initially tried
+					to make my visualizations without this transformation, but they were too noisy
+					to interpret, even though the same trends appeared. I communciated this openly
+					in labels of the plot.</li>
+				<li>(-1) <b>Axis ranges:</b> I shrunk the natural disaster axis range primarily to
+					make the red line more visible, but also to make the natural disaster bars look
+					smaller and more benign. Part of the reason I do not label this more deceptive
+					is
+					that I want to call the most attention to the rising temperatures, while the
+					bars
+					themselves are (intentionally) flat even scaled up.</li>
+				<li>(.5) <b>Labeling, colors, etc.:</b> I made an effort for this figure to feel
+					scientific and legitimate, labeling each axis with an exact description of the
+					value
+					and with the units in parentheses. I chose a deep, warm color for the
+					temperature line
+					to nod to "warming" (and to make it feel like a legitimate issue!), while also
+					choosing
+					a soft green color for the bars to suggest "nothing to see here."</li>
 			</ul>
-    </section>
+		</section>
 
-    <section>
-      <h2>Final Reflection</h2>
+		<section>
+			<h2>Final Reflection</h2>
 
-      <p>[WRITE FINAL REFLECTION PARAGRAPHS HERE.]</p>
-    </section>
+			<p>[WRITE FINAL REFLECTION PARAGRAPHS HERE.]</p>
+		</section>
 	</main>
 </body>
+
 </html>
